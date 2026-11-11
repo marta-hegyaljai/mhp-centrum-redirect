@@ -1,0 +1,21 @@
+{
+  "name": "mhp-centrum-redirect",
+  "description": "301 redirects from the former mhp-centrum.com domain to mhp-coaching.ch",
+  "scripts": {
+    "test": "node scripts/test.mjs",
+    "test:live": "node scripts/test.mjs --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marta-hegyaljai/mhp-centrum-redirect.git"
+  },
+  "bugs": {
+    "url": "https://github.com/marta-hegyaljai/mhp-centrum-redirect/issues"
+  },
+  "homepage": "https://github.com/marta-hegyaljai/mhp-centrum-redirect#readme",
+  "devDependencies": {
+    "@vercel/routing-utils": "^6.6.1"
+  },
+  "private": true,
+  "type": "module"
+}
