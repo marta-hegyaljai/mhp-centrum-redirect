@@ -1,6 +1,6 @@
 # mhp-centrum-redirect
 
-Permanent (301) redirects from the former **mhp | centrum** domain
+Permanent (301) redirects from the former **mhp | centrum** domain 
 (`mhp-centrum.com`, an expired Squarespace site) to the matching pages of
 **www.mhp-coaching.ch**, so links, bookmarks and Google's ranking for the old
 pages carry over to the new site instead of hitting « Website Expired ».
