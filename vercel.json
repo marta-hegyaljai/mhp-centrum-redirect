@@ -7,55 +7,55 @@
     {
       "source": "/:path((?!robots\\.txt$).*)",
       "has": [{ "type": "host", "value": "therap.mhp-centrum.com" }],
-      "destination": "https://app.mhp-coaching.ch/fr/salles",
+      "destination": "https://app.mhp-coaching.ch/fr/salles?utm_source=mhp-centrum&utm_medium=redirect",
       "statusCode": 301
     },
     {
       "source": "/:path((?!robots\\.txt$).*)",
       "has": [{ "type": "host", "value": "ls.mhp-centrum.com" }],
-      "destination": "https://app.mhp-coaching.ch/fr/formations",
+      "destination": "https://app.mhp-coaching.ch/fr/formations?utm_source=mhp-centrum&utm_medium=redirect",
       "statusCode": 301
     },
 
-    { "source": "/", "destination": "https://www.mhp-coaching.ch/", "statusCode": 301 },
+    { "source": "/", "destination": "https://www.mhp-coaching.ch/?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/fribourg{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
-    { "source": "/hypnose-fribourg{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
-    { "source": "/lausanne{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
-    { "source": "/geneve{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
-    { "source": "/centres{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
-    { "source": "/contact{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg", "statusCode": 301 },
+    { "source": "/fribourg{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/hypnose-fribourg{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/lausanne{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/geneve{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/centres{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/contact{/}?", "destination": "https://www.mhp-coaching.ch/centre-hypnose-fribourg?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/hypnose{/}?", "destination": "https://www.mhp-coaching.ch/hypnose", "statusCode": 301 },
-    { "source": "/hypnotherapie{/}?", "destination": "https://www.mhp-coaching.ch/hypnose", "statusCode": 301 },
-    { "source": "/faq{/}?", "destination": "https://www.mhp-coaching.ch/hypnose", "statusCode": 301 },
+    { "source": "/hypnose{/}?", "destination": "https://www.mhp-coaching.ch/hypnose?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/hypnotherapie{/}?", "destination": "https://www.mhp-coaching.ch/hypnose?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/faq{/}?", "destination": "https://www.mhp-coaching.ch/hypnose?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:tabac|fumer|cigarette).*)", "destination": "https://www.mhp-coaching.ch/hypnose/arret-du-tabac", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:concentration|examen|sport|performance).*)", "destination": "https://www.mhp-coaching.ch/hypnose/concentration-examens", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:enfant|ado).*)", "destination": "https://www.mhp-coaching.ch/hypnose/enfants-adolescents", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:confiance|estime|public).*)", "destination": "https://www.mhp-coaching.ch/hypnose/confiance-en-soi", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:douleur|colon|bruxisme|psychosomat).*)", "destination": "https://www.mhp-coaching.ch/hypnose/troubles-psychosomatiques", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:anxi|stress|burn|phobi|avion|toc|panique|relaxation|emotion|relation|trauma).*)", "destination": "https://www.mhp-coaching.ch/hypnose/stress-anxiete", "statusCode": 301 },
-    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*)", "destination": "https://www.mhp-coaching.ch/hypnose", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:tabac|fumer|cigarette).*)", "destination": "https://www.mhp-coaching.ch/hypnose/arret-du-tabac?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:concentration|examen|sport|performance).*)", "destination": "https://www.mhp-coaching.ch/hypnose/concentration-examens?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:enfant|ado).*)", "destination": "https://www.mhp-coaching.ch/hypnose/enfants-adolescents?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:confiance|estime|public).*)", "destination": "https://www.mhp-coaching.ch/hypnose/confiance-en-soi?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:douleur|colon|bruxisme|psychosomat).*)", "destination": "https://www.mhp-coaching.ch/hypnose/troubles-psychosomatiques?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*(?:anxi|stress|burn|phobi|avion|toc|panique|relaxation|emotion|relation|trauma).*)", "destination": "https://www.mhp-coaching.ch/hypnose/stress-anxiete?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:prefix(hypnotherapie|hypnose)/:slug(.*)", "destination": "https://www.mhp-coaching.ch/hypnose?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/therapeutes/marta-hegyaljai-python{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/marta-hegyaljai-python", "statusCode": 301 },
-    { "source": "/hypnose-marta-hegyaljai-python{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/marta-hegyaljai-python", "statusCode": 301 },
-    { "source": "/therapeutes/anne-zurcher-kondratowicz{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/anne-zurcher-kondratowicz", "statusCode": 301 },
-    { "source": "/therapeutes{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes", "statusCode": 301 },
-    { "source": "/therapeutes/:slug(.*)", "destination": "https://www.mhp-coaching.ch/therapeutes", "statusCode": 301 },
+    { "source": "/therapeutes/marta-hegyaljai-python{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/marta-hegyaljai-python?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/hypnose-marta-hegyaljai-python{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/marta-hegyaljai-python?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/therapeutes/anne-zurcher-kondratowicz{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes/anne-zurcher-kondratowicz?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/therapeutes{/}?", "destination": "https://www.mhp-coaching.ch/therapeutes?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/therapeutes/:slug(.*)", "destination": "https://www.mhp-coaching.ch/therapeutes?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/:page(rdv|rdv-visite|prendre-rdv|rendez-vous|reservation|booking){/}?", "destination": "https://www.mhp-coaching.ch/appointments", "statusCode": 301 },
+    { "source": "/:page(rdv|rdv-visite|prendre-rdv|rendez-vous|reservation|booking){/}?", "destination": "https://www.mhp-coaching.ch/appointments?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/:page(formation|formations|agenda|events)", "destination": "https://www.mhp-coaching.ch/formations", "statusCode": 301 },
-    { "source": "/:page(formation|formations|agenda|events)/:slug(.*)", "destination": "https://www.mhp-coaching.ch/formations", "statusCode": 301 },
+    { "source": "/:page(formation|formations|agenda|events)", "destination": "https://www.mhp-coaching.ch/formations?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
+    { "source": "/:page(formation|formations|agenda|events)/:slug(.*)", "destination": "https://www.mhp-coaching.ch/formations?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/:page(a-propos-mhp|a-propos|about){/}?", "destination": "https://www.mhp-coaching.ch/ecole", "statusCode": 301 },
+    { "source": "/:page(a-propos-mhp|a-propos|about){/}?", "destination": "https://www.mhp-coaching.ch/ecole?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
-    { "source": "/:page(pro|collabs|abo-pro|coworking-therapeutes|location-cabinets){/}?", "destination": "https://app.mhp-coaching.ch/fr/salles", "statusCode": 301 },
+    { "source": "/:page(pro|collabs|abo-pro|coworking-therapeutes|location-cabinets){/}?", "destination": "https://app.mhp-coaching.ch/fr/salles?utm_source=mhp-centrum&utm_medium=redirect", "statusCode": 301 },
 
     {
       "source": "/:path((?!robots\\.txt$).*)",
-      "destination": "https://www.mhp-coaching.ch/",
+      "destination": "https://www.mhp-coaching.ch/?utm_source=mhp-centrum&utm_medium=redirect",
       "statusCode": 301
     }
   ]

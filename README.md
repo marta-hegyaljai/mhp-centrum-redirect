@@ -37,7 +37,11 @@ Each rule is in `vercel.json`. The first rule that matches wins.
 | `ls.mhp-centrum.com/…` (workshops) | `app.mhp-coaching.ch/fr/formations` |
 | anything else (massages, drainage, coaching, bons cadeaux…) | `www.mhp-coaching.ch/` |
 
-Query strings are kept. `app.mhp-coaching.ch/fr/salles` asks visitors who are
+Every destination carries `?utm_source=mhp-centrum&utm_medium=redirect`, so
+PostHog counts the visits the old domain sends (a 301 alone keeps the referrer
+of the page before it, usually Google, and the visit looks like any other).
+The new pages' canonical URLs carry no query, so search engines index the clean
+address. Query strings on the old URL are kept too. `app.mhp-coaching.ch/fr/salles` asks visitors who are
 not signed in to sign in first, as it does from the mhp-hypnose footer.
 
 ## Test

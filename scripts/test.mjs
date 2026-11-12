@@ -21,6 +21,9 @@ if (error) {
 
 const W = "https://www.mhp-coaching.ch";
 const APP = "https://app.mhp-coaching.ch";
+// Every destination carries this tag so PostHog can count the visits the
+// old domain sends (a 301 keeps the referrer of the page before it).
+const TAG = "?utm_source=mhp-centrum&utm_medium=redirect";
 
 // [legacy URL, expected destination]. URLs from Google's index of
 // mhp-centrum.com (Nov 2026), the archived pages in mhp-coaching-astro's
@@ -106,10 +109,11 @@ const destinations = new Set();
 for (const [url, expected] of cases) {
   const got = resolve(url);
   const location = got?.location ?? null;
-  const ok = location === expected && (got === null || got.status === 301);
+  const want = expected === null ? null : expected + TAG;
+  const ok = location === want && (got === null || got.status === 301);
   if (!ok) {
     failures++;
-    console.log(`FAIL ${url}\n     expected ${expected}\n     got      ${location} (${got?.status})`);
+    console.log(`FAIL ${url}\n     expected ${want}\n     got      ${location} (${got?.status})`);
   }
   if (location) destinations.add(location);
 }
@@ -121,7 +125,7 @@ if (process.argv.includes("--live")) {
     // /fr/salles is the app's room booking: it sends visitors who are not
     // signed in to /fr/connexion?next=/fr/salles. Same target the mhp-hypnose
     // footer uses (« Location de cabinets »), so a sign-in redirect is expected.
-    const loginWall = destination === `${APP}/fr/salles` && res.status === 307 &&
+    const loginWall = destination === `${APP}/fr/salles${TAG}` && res.status === 307 &&
       (res.headers.get("location") ?? "").startsWith("/fr/connexion");
     const ok = res.status === 200 || loginWall;
     if (!ok) failures++;
