@@ -29,9 +29,9 @@ const TAG = "?utm_source=mhp-centrum&utm_medium=redirect";
 // mhp-centrum.com (Nov 2026), the archived pages in mhp-coaching-astro's
 // docs/sources/www.mhp-centrum.com/, and the theme list on its /hypnose page.
 const cases = [
-  ["https://www.mhp-centrum.com/", `${W}/`],
-  ["https://mhp-centrum.com/", `${W}/`],
-  ["https://en.mhp-centrum.com/", `${W}/`],
+  ["https://www.mhp-centrum.com/", `${W}/centre-hypnose-fribourg`],
+  ["https://mhp-centrum.com/", `${W}/centre-hypnose-fribourg`],
+  ["https://en.mhp-centrum.com/", `${W}/centre-hypnose-fribourg`],
   ["https://www.mhp-centrum.com/fribourg", `${W}/centre-hypnose-fribourg`],
   ["https://www.mhp-centrum.com/hypnose-fribourg", `${W}/centre-hypnose-fribourg`],
   ["https://www.mhp-centrum.com/hypnose-fribourg/", `${W}/centre-hypnose-fribourg`],
@@ -78,10 +78,10 @@ const cases = [
   ["https://www.mhp-centrum.com/agenda", `${W}/formations`],
   ["https://www.mhp-centrum.com/events/1415162842/comptabilite-and-administ", `${W}/formations`],
   ["https://www.mhp-centrum.com/a-propos-mhp", `${W}/ecole`],
-  ["https://www.mhp-centrum.com/massage-lausanne", `${W}/`],
-  ["https://www.mhp-centrum.com/drainage-lymphatique", `${W}/`],
-  ["https://www.mhp-centrum.com/coaching", `${W}/`],
-  ["https://www.mhp-centrum.com/bons-cadeaux", `${W}/`],
+  ["https://www.mhp-centrum.com/massage-lausanne", `${W}/centre-hypnose-fribourg`],
+  ["https://www.mhp-centrum.com/drainage-lymphatique", `${W}/centre-hypnose-fribourg`],
+  ["https://www.mhp-centrum.com/coaching", `${W}/centre-hypnose-fribourg`],
+  ["https://www.mhp-centrum.com/bons-cadeaux", `${W}/centre-hypnose-fribourg`],
   ["https://www.mhp-centrum.com/pro", `${APP}/fr/salles`],
   ["https://therap.mhp-centrum.com/coworking-therapeutes", `${APP}/fr/salles`],
   ["https://therap.mhp-centrum.com/abo-pro", `${APP}/fr/salles`],

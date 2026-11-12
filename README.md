@@ -12,10 +12,12 @@ fallback page that is never served in practice.
 ## Where the old pages go
 
 Each rule is in `vercel.json`. The first rule that matches wins.
+Nothing ever lands on the home page: mhp | centrum was the therapy centre, so
+its root and every page without a closer match go to the centre page.
 
 | Old URL (any of `mhp-centrum.com`, `www.`, `en.`) | New page |
 | :- | :- |
-| `/` | `www.mhp-coaching.ch/` |
+| `/` | `www.mhp-coaching.ch/centre-hypnose-fribourg` (the centre page, never the home page) |
 | `/fribourg`, `/hypnose-fribourg`, `/lausanne`, `/geneve`, `/centres`, `/contact` | `/centre-hypnose-fribourg` (the only centre today) |
 | `/hypnose`, `/hypnotherapie`, `/faq` | `/hypnose` |
 | `/hypnotherapie/…`, `/hypnose/…`, `/hypnotherapie/pour/…`, by theme: | |
@@ -35,7 +37,7 @@ Each rule is in `vercel.json`. The first rule that matches wins.
 | `/pro`, `/collabs`, `/abo-pro`, `/coworking-therapeutes`, `/location-cabinets` | `app.mhp-coaching.ch/fr/salles` |
 | `therap.mhp-centrum.com/…` (cabinet rental, partner programme) | `app.mhp-coaching.ch/fr/salles` |
 | `ls.mhp-centrum.com/…` (workshops) | `app.mhp-coaching.ch/fr/formations` |
-| anything else (massages, drainage, coaching, bons cadeaux…) | `www.mhp-coaching.ch/` |
+| anything else (massages, drainage, coaching, bons cadeaux…) | `/centre-hypnose-fribourg` |
 
 Every destination carries `?utm_source=mhp-centrum&utm_medium=redirect`, so
 PostHog counts the visits the old domain sends (a 301 alone keeps the referrer
